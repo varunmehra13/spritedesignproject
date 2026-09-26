@@ -1,33 +1,55 @@
-# spritedesignproject
+# Sprite — Handoff of Trust
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
+Coded prototype for the Sprite Design Engineer exercise.
 
-## Built with v0
+## Interaction
 
-This repository is linked to a [v0](https://v0.app) project. You can continue developing by visiting the link below -- start new chats to make changes, and v0 will push commits directly to this repo. Every merge to `main` will automatically deploy.
+This prototype explores one moment in an autonomous AI content workflow:
 
-[Continue working on v0 →](https://v0.app/chat/projects/prj_GfGNIykGgb1TKSu5VCz3D9VAtICf)
+Sprite has generated and verified an article, but detects a novel brand-policy decision before publication. Instead of silently deciding on behalf of the marketer, it escalates that specific judgment.
 
-## Getting Started
+Flow:
 
-First, run the development server:
+1. Exception detected
+2. Human defines the brand rule
+3. Sprite revises and re-validates the article
+4. Human approves the current revision
+5. Optional blocked state if the revised claim cannot be verified
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Design principles
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Routine work remains autonomous
+- Human intervention is exception-driven
+- Pushback teaches the system rather than restarting the workflow
+- Learning scope is explicit
+- Revised content must be re-validated
+- Approval is bound to the current draft version
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Prototype architecture
 
-## Learn More
+The interaction uses a deterministic client-side state model:
 
-To learn more, take a look at the following resources:
+`exception → guidance → validating → ready → published`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [v0 Documentation](https://v0.app/docs) - learn about v0 and how to use it.
+Optional failure path:
+
+`validating → blocked`
+
+No real AI, CMS, or backend is required for this prototype.
+
+## Stack
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- v0
+- Vercel
+
+## Design
+
+Figma: [ADD YOUR FIGMA LINK]
+
+## Live prototype
+
+[ADD VERCEL URL]
