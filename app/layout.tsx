@@ -3,8 +3,8 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'Sprite AI — Handoff of Trust',
+  description: 'Autonomous AI content platform that pauses for human judgment on novel brand-policy decisions.',
   generator: 'v0.app',
   icons: {
     icon: [
