@@ -48,8 +48,8 @@ No real AI, CMS, or backend is required for this prototype.
 
 ## Design
 
-Figma: [ADD YOUR FIGMA LINK]
+Figma: https://www.figma.com/design/RG8iiMTP4Pat1y9fxAjAwJ/Sprite-Design-Project?m=auto&t=Fhgy78Qs0OYEKFwZ-6
 
 ## Live prototype
+https://spritedesignproject.vercel.app/
 
-[ADD VERCEL URL]
